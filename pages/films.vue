@@ -1,7 +1,12 @@
 <template>
-  <div class="container is-fullhd">
-    <div v-for="item in result.contents" :key="item.id">
-      <Film :film="item" />
+  <div class="container">
+    <h1>OCS Catalog - New Films this week</h1>
+    <div class="columns is-desktop is-multiline">
+      <div v-for="item in result.contents" :key="item.id">
+        <article class="column">
+          <Film :film="item" />
+        </article>
+      </div>
     </div>
   </div>
 </template>
@@ -28,5 +33,9 @@ export default {
 </script>
 
 <style scoped>
-
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
 </style>

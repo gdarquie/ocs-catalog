@@ -1,13 +1,11 @@
 <template>
-  <div class="container">
-    <article class="film">
-      <h2>{{film.title[0].value}}</h2>
-      <img :src="'https://statics.ocs.fr' + film.imageurl">
-      <!--      <a :href="'https://go.ocs.fr/details/' + item.detaillink">detail</a>-->
-      <p>{{film.subtitle}}</p>
-      <p>{{film.detaillink}}</p>
-    </article>
-  </div>
+  <article class="film">
+    <h2>{{film.title[0].value}}</h2>
+    <img :src="'https://statics.ocs.fr' + film.imageurl">
+    <!--      <a :href="'https://go.ocs.fr/details/' + item.detaillink">detail</a>-->
+    <p>{{film.subtitle}}</p>
+    <p>{{film.detaillink}}</p>
+  </article>
 </template>
 
 <script>
